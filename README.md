@@ -1,4 +1,4 @@
-# Gomall
+# tiktok_mall
 This is a simplified-ver tiktok mall demo based CloudWeGo.
 
 We made some changes to the original demo, the reference address as follow --
