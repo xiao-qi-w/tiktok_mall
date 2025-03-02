@@ -57,6 +57,10 @@ lint-fix: ## run `golangci-lint` for all go module
 run: ## run {svc} server. example: make run svc=product
 	@scripts/run.sh ${svc}
 
+.PHONY: run_all
+run: ## run all server. example: make run_all
+	@scripts/start.sh
+
 ##@ Development Env
 
 .PHONY: env-start

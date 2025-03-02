@@ -72,7 +72,12 @@ This cmd must appoint a service.
 make run svc=`svcName`
 ```
 
-If you want to run the service selectively, you can edit the start.sh file and run it. Its default content is shown below:
+If you want to run the service selectively, you can edit the *~/scripts/start.sh* file and execute 
+```
+make run_all
+```
+
+Its default content is shown below:
 
 ```
 #!/bin/bash
