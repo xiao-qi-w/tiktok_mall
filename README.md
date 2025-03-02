@@ -108,6 +108,3 @@ make open-consul
 ```
 make
 ```
-## Contributors
-- [rogerogers](https://github.com/rogerogers)
-- [baiyutang](https://github.com/baiyutang)
