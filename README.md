@@ -1,7 +1,10 @@
 # Gomall
-[中文](README_cn.md)
+This is a simplified-ver tiktok mall demo based CloudWeGo.
 
-This is a teaching project for newbie using CloudWeGo
+We made some changes to the original demo, the reference address as follow --
+[gomall](https://github.com/cloudwego/biz-demo/tree/main/gomall)
+
+Thanks very much for Bytedance's technical lessons!
 
 ## Technology Stack
 | technology | introduce |
