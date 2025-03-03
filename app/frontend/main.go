@@ -101,13 +101,13 @@ func registerMiddleware(h *server.Hertz) {
 	if conf.GetConf().Hertz.EnablePprof {
 		pprof.Register(h)
 	}
-	secret := os.Getenv("SESSION_SECRET")
-	if secret == "" {
-		panic("SESSION_SECRET environment variable is not set")
-	}
-	if len(secret) < 32 {
-		panic("SESSION_SECRET must be at least 32 bytes long")
-	}
+	// secret := os.Getenv("SESSION_SECRET")
+	// if secret == "" {
+	// 	panic("SESSION_SECRET environment variable is not set")
+	// }
+	// if len(secret) < 32 {
+	// 	panic("SESSION_SECRET must be at least 32 bytes long")
+	// }
 	store, err := redis.NewStore(100, "tcp", conf.GetConf().Redis.Address, "", []byte(os.Getenv("SESSION_SECRET")))
 	if err != nil {
 		panic(err)
